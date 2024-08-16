@@ -35,6 +35,12 @@ class OBJson:
         except (KeyError, AttributeError):
             return False
 
+    def __delitem__(self, key):
+        del self._data[key]
+
+    def __delattr__(self, key):
+        del self[key]
+
 
 def objson(dict: dict) -> OBJson:
     return OBJson(dict)
