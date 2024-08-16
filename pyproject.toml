@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "objson"
+version = "0.1.0"
+description = "Access python dicts like objects"
+authors = ["Petr Stastny"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[tool.poetry.dev-dependencies]
+pytest = "^8.3.2"
+pre-commit = "^3.8.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
